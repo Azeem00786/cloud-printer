@@ -55,7 +55,7 @@ function renderMarkupJob($filename, $position, $queue, $design) {
     $file = fopen($filename, 'w+');
 
     if ($file != FALSE) {
-        fwrite($file, "[align: centre]");
+        fwrite($file, "[align: left]");
 
         if (isset($design['Logo'])) {
             fwrite($file, "[image: url ".$design['Logo']."; width 100%]\n");
