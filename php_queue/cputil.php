@@ -65,7 +65,7 @@ function renderMarkupJob($filename, $position, $queue, $design) {
             fwrite($file, $design['Header']."\n");
         }
 
-        fwrite($file, "[align: centre]");
+        fwrite($file, "[align: left]");
         fwrite($file, "[mag: w 4; h 4]".$position."[mag]\n");
 
         if (isset($design['Footer'])) {
